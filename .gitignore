@@ -3,6 +3,9 @@ SVD_Alaska_inter_PSA_T_0.2.npz
 median_path_prediction.txt
 epistemic_path_prediction.txt
 
+# Local Claude Code context (not for sharing)
+CLAUDE.md
+
 # Python cache
 __pycache__/
 *.py[cod]
