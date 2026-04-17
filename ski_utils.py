@@ -6,7 +6,16 @@ Replaces MATLAB GPML toolbox calls: covMaterniso, apxGrid, km2deg/deg2km, reckon
 import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.spatial.distance import cdist
-from scipy.fft import rfft2, irfft2, next_fast_len
+from scipy.fft import next_fast_len
+
+try:
+    import pyfftw
+    import pyfftw.interfaces.numpy_fft as _fft_mod
+    pyfftw.interfaces.cache.enable()
+    def rfft2(a, s=None, **kw):  return _fft_mod.rfft2(a, s=s)
+    def irfft2(a, s=None, **kw): return _fft_mod.irfft2(a, s=s)
+except ImportError:
+    from scipy.fft import rfft2, irfft2
 
 
 # ---------------------------------------------------------------------------

@@ -8,3 +8,4 @@ dependencies:
   - scipy>=1.11
   - pandas
   - scikit-learn>=1.3      # randomized_svd used in main loop
+  - pyfftw                 # faster FFT on Apple Silicon (optional but recommended)
