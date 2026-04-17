@@ -1,0 +1,15 @@
+# Large precomputed / output files — do not commit
+SVD_Alaska_inter_PSA_T_0.2.npz
+median_path_prediction.txt
+epistemic_path_prediction.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Spyder project files
+.spyproject/
+.spyderproject.cfg
+
+# macOS metadata
+.DS_Store
