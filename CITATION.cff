@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Efficient Non-Ergodic Path Effect Prediction for the Alaska Region"
+authors:
+  - family-names: Lacour
+    given-names: Maxime
+    email: maxlacour@berkeley.edu
+  - family-names: Abrahamson
+    given-names: Norman
+  - family-names: Sung
+    given-names: Chih-Hsuan
+date-released: 2026-04-18
+url: "https://github.com/maxlacour/Efficient-Alaska-Path-Effect"
